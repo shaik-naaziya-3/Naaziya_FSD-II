@@ -1,0 +1,15 @@
+# Ignore JavaScript files
+*.js
+
+# Ignore declaration files
+*.d.ts
+
+# Ignore source map files
+*.js.map
+*.ts.map
+
+# Ignore node modules
+node_modules/
+
+# Ignore package lock file
+package-lock.json
