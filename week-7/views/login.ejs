@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 320px; margin: 3rem auto; padding: 1rem; }
+        .error { color: #dc2626; background: #fee2e2; padding: 0.5rem; border-radius: 4px; margin-bottom: 1rem; }
+        .field { margin-bottom: 1rem; }
+        input { width: 100%; padding: 0.5rem; box-sizing: border-box; }
+        button { width: 100%; padding: 0.5rem; background: #2563eb; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>Account Login</h2>
+
+    <% if (error) { %>
+        <div class="error"><%= error %></div>
+    <% } %>
+
+    <form action="/login" method="POST">
+        <div class="field">
+            <input type="text" name="username" placeholder="Username (admin)" required>
+        </div>
+        <div class="field">
+            <input type="password" name="password" placeholder="Password (123)" required>
+        </div>
+        <button type="submit">Sign In</button>
+    </form>
+
+</body>
+</html>
