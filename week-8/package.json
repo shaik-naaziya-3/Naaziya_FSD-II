@@ -1,0 +1,14 @@
+{
+  "name": "student-portal-app",
+  "version": "1.0.0",
+  "main": "stateful-app.js",
+  "scripts": {
+    "start": "node stateful-app.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.22.2",
+    "express-session": "^1.19.0"
+  }
+}
